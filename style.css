@@ -74,6 +74,9 @@ nav ul li a b:hover {
   width: 30%;
   font-size: 3rem;
 }
+.font {
+  font-size: 1.2rem;
+}
 
 .rightsection {
   display: flex;
@@ -594,7 +597,8 @@ main hr {
   }
 
   .leftabout img {
-    margin-top: -58px;
+/*     margin-top: -58px; */
+      margin-top: 82px;
     height: 300px;
     width: 244px;
   }
