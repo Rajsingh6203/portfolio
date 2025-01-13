@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
     <title>Document</title>
 
 </head>
@@ -15,25 +15,26 @@
     <header>
         <nav>
             <div class="left"><b>RAJ'S PORTFOLLIO</b></div>
-            <div class="right">
-                <ul>
-                    <li>
-                        <a href="#home" ><b>Home</b></a>
-                    </li>
-                    <li>
-                        <a href="#about us"><b>About</b></a>
-                    </li>
-                    <li>
-                        <a href="#services"><b>Services</b></a>
-                    </li>
-                    <li>
-                        <a href="#projects"><b>Projects</b></a>
-                    </li>
-                    <li>
-                        <a href="#contact"><b>Contact</b></a>
-                    </li>
-                </ul>
-            </div>
+            <section class="drop-down">
+                <div class="right">
+                  <!-- Hamburger Icon -->
+                  <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                  </div>
+              
+                  <!-- Navigation Menu -->
+                  <ul id="menu">
+                    <li><a href="#home"><b>Home</b></a></li>
+                    <li><a href="#about-us"><b>About</b></a></li>
+                    <li><a href="#services"><b>Services</b></a></li>
+                    <li><a href="#projects"><b>Projects</b></a></li>
+                    <li><a href="#contact"><b>Contact</b></a></li>
+                  </ul>
+                </div>
+              </section>
+              
         </nav>
     </header>
     <main id="home">
@@ -44,7 +45,7 @@
                 <span id="element"></span>
             </div>
             <div class="rightsection">
-                <img src="raj1.jpg" alt="" />
+                <img src="/img/raj1.jpg" alt="" />
             </div>
         </section>
         <hr id="about us" />
@@ -53,7 +54,7 @@
             <h1>About <span id="raj">Me</span></h1>
             <div class="aboutfirst">
                 <div class="leftabout">
-                    <img src="raj2.jpg" alt="" />
+                    <img src="/img/raj2.jpg" alt="" />
                 </div>
                 <div class="rightabout">
                     <p class="font">
@@ -65,6 +66,7 @@
                         ab praesentium est saepe dolor ipsa maiores. Quia, quibusdam nobis
                         enim dolores libero sequi, corporis voluptas hic non similique
                         perspiciatis iure repellat quo porro blanditiis quas? Molestias
+                        <!-- <span id="element1"></span> -->
                       
                     </p>
                     <button class="btn">about me</button>
@@ -365,6 +367,12 @@
             typeSpeed: 60,
         });
     </script>
+    <script>
+        function toggleMenu() {
+          var menu = document.getElementById('menu');
+          menu.classList.toggle('show');
+        }
+      </script>
 </body>
 
 </html>
